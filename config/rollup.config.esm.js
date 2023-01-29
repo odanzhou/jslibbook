@@ -1,6 +1,6 @@
 
 module.exports = {
-  input: 'index.js', // 'src/index.js'
+  input: 'src/index.js',
   output: {
     file: 'dist/index.esm.js',
     format: 'es'

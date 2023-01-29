@@ -1,4 +1,4 @@
-const { clone } = require('./lib/clone')
+const clone = require('./lib/clone')
 
 let a = { c: 1 }
 let b = clone(a)
