@@ -1,3 +1,4 @@
+const common = require('./rollup')
 const nodeResolve = require('rollup-plugin-node-resolve')
 
 module.exports = {
@@ -5,7 +6,8 @@ module.exports = {
   output: {
     file: 'dist/index.aio.js',
     format: 'umd',
-    name: 'clone'
+    name: 'clone',
+    banner: common.banner,
   },
   plugins: [
     nodeResolve({
