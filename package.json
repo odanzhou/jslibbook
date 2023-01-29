@@ -7,12 +7,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx webpack",
-    "build:esm": "npx webpack"
+    "build:esm": "npx webpack",
+    "rollup": "npx rollup -c config/rollup.config.js",
+    "rollup:esm": "npx rollup -c config/rollup.config.esm.js",
+    "rollup:aio": "npx rollup -c config/rollup.config.aio.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "rollup": "^0.57.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
   }
