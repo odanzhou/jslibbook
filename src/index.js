@@ -9,7 +9,8 @@ a.c = 2
 console.log('a.c', a.c)
 console.log('b.c', b.c)
 const tt = (...args) => {
-  return throttle(...args)
+  const list = Array.from(args)
+  return throttle(list, ...args)
 }
 const testT = tt((...args) => {
   console.log(args)

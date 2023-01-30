@@ -8,7 +8,11 @@ const banner = `/*
 * Licensed under MIT
 */
 `
-
+/**
+ * babel 转化编译
+ * @param {*} opt 
+ * @returns 
+ */
 const getCompiler = (opt = {}) => {
   const { browsers, node, targets, ...others } = opt || {}
   return babel({
@@ -32,7 +36,21 @@ const getCompiler = (opt = {}) => {
   })
 }
 
+const polyFillPlugin = () => {
+  return [
+    '@babel/plugin-transform-runtime',
+    {
+      corejs: 2,
+    },
+  ]
+}
+
+const plugins = [
+  getCompiler(),
+  polyFillPlugin(),
+]
+
 module.exports = {
   banner,
-  getCompiler,
+  plugins,
 }
