@@ -10,8 +10,7 @@ const banner = `/*
 `
 /**
  * babel 转化编译
- * @param {*} opt 
- * @returns 
+ * @param {*} opt
  */
 const getCompiler = (opt = {}) => {
   const { browsers, node, targets, ...others } = opt || {}
