@@ -13,6 +13,7 @@ module.exports = {
     nodeResolve({
       main: true,
       extensions: ['.js']
-    })
-  ]
+    }),
+    common.getCompiler(),
+  ],
 }
