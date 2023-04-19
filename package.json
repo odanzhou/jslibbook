@@ -1,0 +1,20 @@
+{
+  "name": "jslibbook",
+  "version": "1.0.0",
+  "description": "想法 => 目标 => 设计 => 编码",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
