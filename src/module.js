@@ -28,4 +28,4 @@
   }
 
   mod.clone = clone
-})(window.clone = window.clone || {}, jQuery)
+})(window.clone = window.clone || {}, window.jQuery || {})
