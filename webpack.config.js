@@ -11,6 +11,9 @@ const config = {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+  },
+  resolve: {
+    mainFields: ['module', 'main']
   }
 }
 

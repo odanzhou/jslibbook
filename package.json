@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "想法 => 目标 => 设计 => 编码",
   "main": "index.js",
+  "module": "index.esm,js",
+  "jsnext": "index.esm.js",
   "directories": {
     "lib": "lib"
   },
