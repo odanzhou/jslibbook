@@ -13,6 +13,7 @@
     "webpack:build": "webpack",
     "build:commonjs": "rollup -c config/rollup.config.js",
     "build:esm": "rollup -c config/rollup.config.esm.js",
+    "build:aio": "rollup -c config/rollup.config.aio.js",
     "build": "npm run build:esm"
   },
   "keywords": [],
@@ -23,6 +24,7 @@
     "webpack-cli": "^5.0.1"
   },
   "devDependencies": {
-    "rollup": "0.57.1"
+    "rollup": "0.57.1",
+    "rollup-plugin-node-resolve": "3.0.3"
   }
 }
