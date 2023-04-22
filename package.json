@@ -5,6 +5,7 @@
   "main": "dist/index.aio.js",
   "module": "dist/index.js",
   "jsnext:main": "index.esm.js",
+  "sideEffects": false,
   "directories": {
     "lib": "lib"
   },
