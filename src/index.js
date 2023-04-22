@@ -1,4 +1,4 @@
-import clone from './clone'
+import clone, { aaa } from './clone'
 
 let a = { c: 1}
 let b = clone(a) // 深拷贝
@@ -9,5 +9,6 @@ console.log(a.c) // 输出 2
 console.log(b.c) // 输出 1
 
 export {
-  clone
+  clone,
+  aaa,
 }

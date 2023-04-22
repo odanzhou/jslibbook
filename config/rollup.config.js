@@ -10,7 +10,10 @@ const config = {
     file: 'dist/index.js',
     format: 'cjs',
     banner: common.banner,
-  }
+  },
+  plugins: [
+    common.getCompiler(),
+  ]
 }
 
 module.exports = config

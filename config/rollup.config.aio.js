@@ -17,7 +17,8 @@ const config = {
     nodeResolve({
       main: true,
       extensions: ['.js']
-    })
+    }),
+    common.getCompiler(),
   ]
 }
 

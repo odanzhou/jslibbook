@@ -5,7 +5,6 @@
   "main": "dist/index.aio.js",
   "module": "dist/index.js",
   "jsnext:main": "index.esm.js",
-  "sideEffects": false,
   "directories": {
     "lib": "lib"
   },
@@ -19,14 +18,16 @@
   },
   "keywords": [],
   "author": "",
-
   "license": "ISC",
   "dependencies": {
     "webpack": "^5.79.0",
     "webpack-cli": "^5.0.1"
   },
   "devDependencies": {
+    "@babel/core": "7.1.2",
+    "@babel/preset-env": "7.1.0",
     "rollup": "0.57.1",
+    "rollup-plugin-babel": "4.0.3",
     "rollup-plugin-node-resolve": "3.0.3"
   }
 }

@@ -11,7 +11,10 @@ const config = {
     file: 'dist/index.esm.js',
     format: 'es',
     banner: common.banner,
-  }
+  },
+  plugins: [
+    common.getCompiler(),
+  ]
 }
 
 module.exports = config
