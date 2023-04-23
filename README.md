@@ -28,3 +28,8 @@ rollup 版本: 书中是 0.57.1，项目目前使用的是最新的 3.20.6, 有�
 > rollup 提供了插件rollup-plugin-commonjs ，以便于在 rollup 中引用 commonjs 规范的包。该插件的作用是将 commonjs 模块转成 es6 模块。
 > rollup-plugin-commonjs 通常与 rollup-plugin-node-resolve 一同使用，后者用来解析依赖的模块路径。
 format: 'umd' 的模式下才需要
+
+### 测试
+兼顾测试覆盖率和效率
+控制变量法，按照参数分组，对于每个参数，分别设置正确的参数、错误的参数以及边界值，对于其他的参数，而对于其他的参数给一个正确的固定值即可，保证其他参数影响本参数的测试
+对于同一个类型的输入，只需要设计一个用例即可
