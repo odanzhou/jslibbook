@@ -1,5 +1,6 @@
 const expect = require('expect.js')
-const { clone } = require('../dist/index.js')
+// const { clone } = require('../dist/index.js')
+const { clone } = require('../src/index.js')
 
 describe('clone function test', () => {
   it('正确的测试用例', () => {

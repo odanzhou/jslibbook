@@ -2,5 +2,8 @@
   "reporter": [
     "html",
     "text"
+  ],
+  "require": [
+    "@babel/register"
   ]
 }

@@ -1,6 +1,10 @@
 # 现代 Javascript 库开发
 想法 => 目标 => 设计 => 编码
 
+
+[源代码](https://github.com/jslib-book/jslib-book-code)
+[勘误](https://github.com/jslib-book/jslib-book-code/issues)
+
 ### 一些注意事项
 rollup 版本: 书中是 0.57.1，项目目前使用的是最新的 3.20.6, 有问题再切换回去(切换回去了)
 
@@ -49,9 +53,22 @@ eql: 值相等（深拷贝适合用这个来比较）
 ##### 行覆盖率 Line Coverage
 
 
+#### 源代码覆盖率
+打包后的代码有一些构建工具生成的代码
+原理：先向源代码中插入测试代码覆盖率的代码，再调用 Babel 进行构建，将构建好的代码传递给 Mocha 进行测试，这样就得到了源代码的测试覆盖率
+> pnpm i @babel/register@7.0.0 babel-plugin-istanbul@5.1.0 cross-env@5.2.0 -D
 
 #### 踩坑
-ReferenceError: window is not defined
+##### ReferenceError: window is not defined
 解决：[node.js - mocha 命令给出 ReferenceError : window is not defined](https://www.coder.work/article/103442)
 > npm install --save-dev --save-exact jsdom jsdom-global
 > 然后将 -r jsdom-global/register 添加到你的 mocha 命令行。当您重新运行测试时，window is not defined 错误将消失。
+##### Cannot use import statement outside a module
+.nycrc 中增加配置
+[解决 mocha 测试时 `cannot use import statement outside a module` 错误，以及配置 travis](https://blog.meathill.com/test/how-tofix-mocha-cannot-use-import-statement-outside-a-module-and-add-travis-configuration.html)
+
+```typescript
+"require": [
+  "@babel/register"
+]
+```
