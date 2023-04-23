@@ -27,3 +27,4 @@ rollup 版本: 书中是 0.57.1，项目目前使用的是最新的 3.20.6, 有�
 [使用rollup打包JS的方法步骤](https://www.mianshigee.com/note/detail/63156yth/)
 > rollup 提供了插件rollup-plugin-commonjs ，以便于在 rollup 中引用 commonjs 规范的包。该插件的作用是将 commonjs 模块转成 es6 模块。
 > rollup-plugin-commonjs 通常与 rollup-plugin-node-resolve 一同使用，后者用来解析依赖的模块路径。
+format: 'umd' 的模式下才需要

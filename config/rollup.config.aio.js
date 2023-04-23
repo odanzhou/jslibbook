@@ -1,4 +1,3 @@
-const nodeResolve = require('rollup-plugin-node-resolve')
 const Rollup = require('rollup')
 const common = require('./rollup')
 
@@ -14,10 +13,7 @@ const config = {
     banner: common.banner,
   },
   plugins: [
-    nodeResolve({
-      main: true,
-      extensions: ['.js']
-    }),
+    ...common.commonjsPlugins,
     common.getCompiler(),
   ]
 }

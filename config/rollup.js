@@ -1,6 +1,6 @@
 const babel = require('rollup-plugin-babel')
 const commonjs = require('rollup-plugin-commonjs')
-const resolve = require('rollup-plugin-node-resolve')
+const nodeResolve = require('rollup-plugin-node-resolve')
 const pkg = require('../package.json')
 
 const { version, name } = pkg
@@ -31,18 +31,26 @@ const getCompiler = (opt) => {
     ],
     runtimeHelpers: true,
     plugins: [
-      commonjs(),
-      // resolve(),
       [
         '@babel/plugin-transform-runtime', {
           corejs: 2,
-          // 'helpers': false,
-          // 'regenerator': false
+          'helpers': false,
+          'regenerator': false
         }
       ]
     ],
     exclude: 'node_modules/**',
   })
 }
+
+exports.commonjsPlugins = [
+  nodeResolve({
+    main: true,
+    extensions: ['.js'],
+  }),
+  commonjs({
+    include: 'node_modules/**',
+  }),
+]
 
 exports.getCompiler = getCompiler;
