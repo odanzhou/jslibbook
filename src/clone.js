@@ -1,10 +1,9 @@
 import type from './type'
 
-Array.from('abc') // ['a', 'b', 'c']
-
 export const aaa = 1
 
 function clone(source) {
+  window.xx = Array.from('abc') // ['a', 'b', 'c']
   const t = type(source)
   if(t !== 'object' && t !== 'array') {
     return source
