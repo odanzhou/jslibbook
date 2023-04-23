@@ -10,3 +10,10 @@ rollup 版本: 书中是 0.57.1，项目目前使用的是最新的 3.20.6, 有�
 > Cannot find module '@babel/preset-plugin-transform-runtime' from
 > If you want to resolve "@babel/plugin-transform-runtime", use "module:@babel/plugin-transform-runtime"
 > - Did you accidentally pass a preset as a plugin?
+
+用npm 下载包有错误提示
+> rollup@">=0.60.0 <1" from rollup-plugin-babel@4.0.3
+升级 rollup 版本至 0.60.7
+
+原来是将plugin放在了preset 中导致的
+把 rollup 改回去

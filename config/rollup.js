@@ -25,7 +25,9 @@ const getCompiler = (opt) => {
           modules: false,
           loose: true, // true: 松散模式，更好的兼容 IE8 浏览器
         },
-      ],
+      ]
+    ],
+    plugins: [
       [
         '@babel/plugin-transform-runtime', {
           corejs: 2
