@@ -9,7 +9,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "webpack:build": "webpack",
     "build:self": "rollup -c config/rollup.config.js",
     "build:esm": "rollup -c config/rollup.config.esm.js",
@@ -28,6 +28,8 @@
     "@babel/core": "7.1.2",
     "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "7.1.0",
+    "expect.js": "0.3.1",
+    "mocha": "3.5.3",
     "rollup": "0.57.1",
     "rollup-plugin-babel": "4.0.3",
     "rollup-plugin-commonjs": "8.3.0",
