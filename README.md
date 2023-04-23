@@ -40,6 +40,15 @@ eql: 值相等（深拷贝适合用这个来比较）
 
 #### 单元测试覆盖率
 基于 Istanbul (npm 包叫 nyc) 来做单元测试覆盖率
+##### 语句覆盖率 Statement Coverage
+
+##### 分支覆盖率 Branch Coverage
+
+##### 函数覆盖率 Function Coverage
+
+##### 行覆盖率 Line Coverage
+
+
 
 #### 踩坑
 ReferenceError: window is not defined
