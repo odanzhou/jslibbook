@@ -4,7 +4,6 @@
     "text"
   ],
   "require": [
-    "jsdom-global/register",
     "@babel/register"
   ]
 }

@@ -78,3 +78,16 @@ eql: 值相等（深拷贝适合用这个来比较）
 // window.xx = Array.from('abc') // ['a', 'b', 'c']
 ```
 上面代码屏蔽的情况下，代码测试覆盖率都为 0, 放开后就正常了
+```typescript
+export function clone(source) {
+  // ...
+}
+```
+导出就正常了，。。。。。。奇葩
+```typescript
+export const clone = (source) => {
+  // ...
+}
+```
+这种也不行
+export default clone 和 export function clone 缺失测试覆盖率就为0了

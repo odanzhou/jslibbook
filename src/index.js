@@ -1,4 +1,4 @@
-import clone, { aaa } from './clone'
+import  { aaa, clone } from './clone'
 
 let a = { c: 1}
 let b = clone(a) // 深拷贝
