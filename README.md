@@ -37,3 +37,12 @@ format: 'umd' 的模式下才需要
 #### 方法差异
 equal: 全等
 eql: 值相等（深拷贝适合用这个来比较）
+
+#### 单元测试覆盖率
+基于 Istanbul (npm 包叫 nyc) 来做单元测试覆盖率
+
+#### 踩坑
+ReferenceError: window is not defined
+解决：[node.js - mocha 命令给出 ReferenceError : window is not defined](https://www.coder.work/article/103442)
+> npm install --save-dev --save-exact jsdom jsdom-global
+> 然后将 -r jsdom-global/register 添加到你的 mocha 命令行。当您重新运行测试时，window is not defined 错误将消失。
