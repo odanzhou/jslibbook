@@ -11,6 +11,7 @@
   "scripts": {
     "test": "mocha -r jsdom-global/register",
     "nyc": "cross-env NODE_ENV=test nyc mocha -r jsdom-global/register",
+    "nyc2": "cross-env NODE_ENV=test nyc mocha",
     "webpack:build": "webpack",
     "build:self": "rollup -c config/rollup.config.js",
     "build:esm": "rollup -c config/rollup.config.esm.js",
