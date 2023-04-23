@@ -1,10 +1,16 @@
 {
-  "reporter": [
-    "html",
-    "text"
-  ],
+  "check-coverage": true,
+  "lines": 75,
+  "statements": 75,
+  "functions": 75,
+  "branches": 75,
   "require": [
-    "jsdom-global/register",
-    "@babel/register"
-  ]
+      "@babel/register"
+  ],
+  "reporter": [
+      "html",
+      "text"
+  ],
+  "sourceMap": false,
+  "instrument": false
 }

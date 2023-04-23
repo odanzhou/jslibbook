@@ -10,5 +10,5 @@ console.log(b.c) // 输出 1
 
 export {
   clone,
-  aaa,
+  aaa
 }
