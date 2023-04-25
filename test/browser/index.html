@@ -10,9 +10,17 @@
 <body>
   <div id="mocha"></div>
   <script src="../../node_modules/mocha/mocha.js"></script>
-  <script src="../../node_modules/expect.js"></script>
+  <script src="../../node_modules/expect.js/index.js"></script>
   <script src="../../dist/index.aio.js"></script>
-  <!--占位符-->
+  <script>
+    var libs = {
+      'expect.js': expect,
+      '../src/index.js': window['clone'],
+    }
+    var require = function(path) {
+      return libs[path]
+    }
+  </script>
   <script>
     mocha.setup('bdd')
   </script>
