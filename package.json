@@ -16,7 +16,8 @@
     "build:self": "rollup -c config/rollup.config.js",
     "build:esm": "rollup -c config/rollup.config.esm.js",
     "build:aio": "rollup -c config/rollup.config.aio.js",
-    "build": "npm run build:esm && npm run build:aio && npm run build:self"
+    "build": "npm run build:esm && npm run build:aio && npm run build:self",
+    "test:auto": "node test/browser/puppeteer.js"
   },
   "keywords": [],
   "author": "",
@@ -39,6 +40,7 @@
     "jsdom-global": "^3.0.2",
     "mocha": "3.5.3",
     "mocha-jsdom": "^1.1.0",
+    "puppeteer": "5.5.0",
     "rollup": "0.60.7",
     "rollup-plugin-babel": "4.0.3",
     "rollup-plugin-commonjs": "8.3.0",

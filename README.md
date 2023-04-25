@@ -97,3 +97,6 @@ export const clone = (source) => {
 这种也不行
 export default clone 和 export function clone 缺失测试覆盖率就为0了
 
+### Puppeteer
+用 Puppeteer 来自动化测试户
+[Puppeteer使用指南 - 在 Node.js 下模拟浏览器](https://www.zhihu.com/tardis/bd/art/622256649)
