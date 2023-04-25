@@ -1,19 +1,30 @@
-const puppteer = require('puppeteer');
+const puppteer = require('puppeteer')
+const ora = require('ora')
+const colors = require('colors')
 
-const check = async ({ page, browser}) => {
+const prefix = "[browser]"
+const spinner = ora(`${prefix} start browser test...`).start()
+
+const check = async ({ page, browser, pngPath}) => {
   await page.waitFor('.suite')
   // 通过
   const passNodes = await page.$$('.pass')
   // 失败
   const failNodes = await page.$$('.fail')
+  spinner.stop()
   if(passNodes && passNodes.length != null) {
-    console.log(`message: 通过 ${passNodes.length} 项`)
+    console.log(`${prefix}: 通过 ${passNodes.length} 项`.green)
   }
-  if(failNodes && failNodes.length != null) {
-    console.log(`message: 失败 ${failNodes.length} 项`)
+  if(failNodes && failNodes.length) {
+    console.log(
+      `${prefix}: 失败 ${failNodes.length} 项`.red,
+      "具体见：",
+      `${pngPath}`.underline
+    )
     await browser.close()
     process.exit(1)
   }
+  console.log(prefix, `🎉 用例全部通过浏览器测试 🎉`.green);
 }
 
 (async () => {
@@ -29,7 +40,7 @@ const check = async ({ page, browser}) => {
   await page.screenshot({ path: pngPath, fullPage: true})
   
   /* --- 占位符 --- */
-  await check({ page, browser})
+  await check({ page, browser, pngPath })
   // 关闭浏览器
   await new Promise((resolve) => {
     setTimeout(async () => {
