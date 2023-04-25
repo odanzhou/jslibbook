@@ -72,6 +72,11 @@ eql: 值相等（深拷贝适合用这个来比较）
   "@babel/register"
 ]
 ```
+### 警告
+rollup-plugin-babel 4.0.3
+  └── ✕ unmet peer rollup@">=0.60.0 <1": found 0.57.1
+把rollup升级到 0.57.1 => 0.60.7
+
 
 ##### 测试覆盖率都为0
 ```typescript
@@ -91,3 +96,4 @@ export const clone = (source) => {
 ```
 这种也不行
 export default clone 和 export function clone 缺失测试覆盖率就为0了
+
