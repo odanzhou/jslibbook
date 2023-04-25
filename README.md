@@ -100,3 +100,9 @@ export default clone 和 export function clone 缺失测试覆盖率就为0了
 ### Puppeteer
 用 Puppeteer 来自动化测试户
 [Puppeteer使用指南 - 在 Node.js 下模拟浏览器](https://www.zhihu.com/tardis/bd/art/622256649)
+[自研前端性能监控平台之 Puppeteer 篇](https://zhuanlan.zhihu.com/p/523035204)
+[自研前端性能监控平台之 Lighthouse 篇](https://zhuanlan.zhihu.com/p/471838481)
+[自研前端性能监控平台之 Lighthouse 定制篇](https://zhuanlan.zhihu.com/p/478877904)
+[puppeteer docs](https://pptr.dev/)
+[puppeteer github](https://github.com/puppeteer/puppeteer)
+
