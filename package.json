@@ -1,6 +1,6 @@
 {
-  "name": "jslibbook",
-  "version": "1.0.0",
+  "name": "@jslibbook/clone",
+  "version": "0.0.1",
   "description": "想法 => 目标 => 设计 => 编码",
   "main": "dist/index.aio.js",
   "module": "dist/index.js",
