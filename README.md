@@ -72,6 +72,11 @@ eql: 值相等（深拷贝适合用这个来比较）
   "@babel/register"
 ]
 ```
+
+##### 发布npm包
+[npm ERR! 404 Not Found - Scope not found](https://www.cnblogs.com/shanejix/p/15652257.html)
+
+
 ### 警告
 rollup-plugin-babel 4.0.3
   └── ✕ unmet peer rollup@">=0.60.0 <1": found 0.57.1
