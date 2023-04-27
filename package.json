@@ -50,6 +50,7 @@
     "mocha": "3.5.3",
     "mocha-jsdom": "^1.1.0",
     "ora": "^5.1.0",
+    "prettier": "^2.8.8",
     "puppeteer": "5.5.0",
     "rollup": "0.60.7",
     "rollup-plugin-babel": "4.0.3",
