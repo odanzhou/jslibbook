@@ -4,11 +4,6 @@
   "statements": 75,
   "functions": 75,
   "branches": 75,
-  "reporter": [
-    "html",
-    "text"
-  ],
-  "require": [
-    "@babel/register"
-  ]
+  "reporter": ["html", "text"],
+  "require": ["@babel/register"]
 }

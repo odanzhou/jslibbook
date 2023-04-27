@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
-const clone = require('../lib/clone');
+const clone = require("../lib/clone");
 
-let a = { c: 1};
+let a = { c: 1 };
 let b = clone(a); // 深拷贝
 
 a.c = 2; // 对变量 a 的修改不会影响到变量 b

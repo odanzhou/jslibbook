@@ -1,32 +1,32 @@
-'use strict';
+"use strict";
 
 function clone(source) {
   const t = type(source);
-  if(t !== 'object' && t !== 'array') {
-    return source
+  if (t !== "object" && t !== "array") {
+    return source;
   }
   let target;
-  if(t === 'object') {
+  if (t === "object") {
     target = {};
-    for(let i in source) {
-      if(source.hasOwnProperty(i)) {
+    for (let i in source) {
+      if (source.hasOwnProperty(i)) {
         target[i] = clone(source[i]); // 递归复制
       }
     }
   } else {
     target = [];
-    for(let i = 0; i < source.length; i++) {
+    for (let i = 0; i < source.length; i++) {
       target[i] = clone(source[i]); // 递归复制
     }
   }
-  return target
+  return target;
 }
 
 function type(data) {
-  return Object.prototype.toString.call(data).slice(8, -1).toLowerCase()
+  return Object.prototype.toString.call(data).slice(8, -1).toLowerCase();
 }
 
-let a = { c: 1};
+let a = { c: 1 };
 let b = clone(a); // 深拷贝
 
 a.c = 2; // 对变量 a 的修改不会影响到变量 b
