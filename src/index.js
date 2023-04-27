@@ -1,3 +1,3 @@
-import { clone } from "./clone";
+import { clone } from './clone';
 
 export { clone };

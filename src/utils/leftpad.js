@@ -4,7 +4,7 @@
  * @param {number} count
  * @param {stirng} [ch]
  */
-const leftpad = (str, count, ch = "0") => {
+const leftpad = (str, count, ch = '0') => {
   return `${[...Array(count)].map(() => ch)}${str}`.slice(-count);
 };
 export default leftpad;

@@ -17,7 +17,9 @@
     "build:esm": "rollup -c config/rollup.config.esm.js",
     "build:aio": "rollup -c config/rollup.config.aio.js",
     "build": "npm run build:esm && npm run build:aio && npm run build:self",
-    "test:auto": "node test/browser/puppeteer.js"
+    "test:auto": "node test/browser/puppeteer.js",
+    "prettier": "prettier --write src/*",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -55,6 +57,7 @@
     "rollup": "0.60.7",
     "rollup-plugin-babel": "4.0.3",
     "rollup-plugin-commonjs": "8.3.0",
-    "rollup-plugin-node-resolve": "3.0.3"
+    "rollup-plugin-node-resolve": "3.0.3",
+    "husky": "^8.0.0"
   }
 }

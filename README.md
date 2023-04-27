@@ -133,3 +133,16 @@ export default clone 和 export function clone 缺失测试覆盖率就为 0 了
 [自研前端性能监控平台之 Lighthouse 定制篇](https://zhuanlan.zhihu.com/p/478877904)
 [puppeteer docs](https://pptr.dev/)
 [puppeteer github](https://github.com/puppeteer/puppeteer)
+
+
+### 代码风格
+#### prettier
+格式化代码
+.prettierrc.json 配置文件
+.prettierignore 忽略文件
+
+pretty-quick --staged 只格式化待提交代码
+
+#### husky
+方便实用 git 的 hook
+npx husky-init

@@ -4,11 +4,11 @@ function type(data) {
 
 function clone(source) {
   const t = type(source);
-  if (t !== "object" && t !== "array") {
+  if (t !== 'object' && t !== 'array') {
     return source;
   }
   let target;
-  if (t === "object") {
+  if (t === 'object') {
     target = {};
     for (let i in source) {
       if (source.hasOwnProperty(i)) {

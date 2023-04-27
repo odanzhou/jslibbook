@@ -7,11 +7,11 @@
 
   function clone(source) {
     const t = type(source);
-    if (t !== "object" && t !== "array") {
+    if (t !== 'object' && t !== 'array') {
       return source;
     }
     let target;
-    if (t === "object") {
+    if (t === 'object') {
       target = {};
       for (let i in source) {
         if (source.hasOwnProperty(i)) {
@@ -39,12 +39,12 @@
   // UMD
   (function (root, factory) {
     var clone = factory(root);
-    if (typeof define === "function" && define.amd) {
+    if (typeof define === 'function' && define.amd) {
       // AMD 模块
-      define("clone", function () {
+      define('clone', function () {
         return clone;
       });
-    } else if (typeof exports === "object") {
+    } else if (typeof exports === 'object') {
       // CommonJS 模块
       module.exports = clone;
     } else {
@@ -69,11 +69,11 @@
 
     function clone(source) {
       const t = type(source);
-      if (t !== "object" && t !== "array") {
+      if (t !== 'object' && t !== 'array') {
         return source;
       }
       let target;
-      if (t === "object") {
+      if (t === 'object') {
         target = {};
         for (let i in source) {
           if (source.hasOwnProperty(i)) {
